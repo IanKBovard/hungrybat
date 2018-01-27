@@ -22,7 +22,7 @@
     game.load.spritesheet('bullets', '../assets/spr_bullet_strip04.png', 28, 28);
   }
 
-  function create() {
+  function create() {    
     game.stage.backgroundColor = '#2d2d2d';
     background = game.add.tileSprite(0, 0, 4000, 480, 'background');
 
@@ -78,6 +78,7 @@
   }
 
   function update() {
+    audioInput();
     handleBackgroundScroll();
     handlePlayerCharacterMovement();
     handleObstacleScroll();
