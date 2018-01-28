@@ -172,9 +172,11 @@
     moth2.body.loadPolygon('physicsData', 'moth');
     goldMoth.body.clearShapes();
     goldMoth.body.loadPolygon('physicsData', 'moth');
+    goldMoth.body.fixedRotation = true;
 
     toothmathy.body.clearShapes();
     toothmathy.body.loadPolygon('physicsData', 'meatballmonster');
+    toothmathy.body.fixedRotation = true;
 
     playerCharacter.body.collideWorldBounds = true;
     playerCharacter.body.fixedRotation = true;
